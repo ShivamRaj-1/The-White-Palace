@@ -8,7 +8,7 @@ export default function Welcome() {
     return (
         <>
             <Container fluid style={{
-                width: '100vw',
+                width: '98.9vw',
                 backgroundImage: 'url("https://images.pexels.com/photos/4946676/pexels-photo-4946676.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center bottom',

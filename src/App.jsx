@@ -4,6 +4,7 @@ import Portfolio from "./components/portfolio/Portfolio"
 import Videos from "./components/videos/Videos"
 import Services from "./components/services/Services"
 import Welcome from "./components/welcome/Welcome"
+import Footer from "./components/Footer/Footer"
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <Services/>
       <Portfolio/>
       <Videos/>
+      <Footer/>
     </>
   )
 }

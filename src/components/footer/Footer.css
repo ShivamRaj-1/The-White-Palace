@@ -1,0 +1,282 @@
+.footer-main_container{
+    background-color: #0b1f1d;
+    padding-top: 50px ;
+}
+
+.footer-imgDiv{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px auto;
+    align-items: center;
+}
+
+.footer-imgDiv img{
+    margin-bottom: 50px auto;
+}
+
+.footer-contactDiv{
+    width: 70%;
+    margin: auto;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-contactDiv > div{
+    width: 33%;
+    text-align: center;
+    margin: 2em 0;
+}
+
+.footer-contactDiv > div:nth-child(2){
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.footer-contactDiv > div h4{
+    font-size: 23px;
+    line-height: 28px;
+    margin-bottom: 4px;
+    color: rgb(181, 136, 43);
+    font-family: Cormorant, sans-serif;
+}
+
+.footer-contactDiv > div p{
+    font-family: Hind, sans-serif;
+    font-size: 15px;
+    width: 100%;
+}
+
+.footer-signupDiv{
+    width: 100%;
+    margin: 50px auto;
+}
+
+.footer-signupDiv > div {
+    width: 40%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 0.5em 0;
+    padding-left: 1em;
+    padding-right: 0.5em;
+    border-radius: 6px;
+}
+.footer-signupDiv > div svg{
+    color: gray;
+    width: 10%;
+}
+.footer-signupDiv > div input{
+    outline: none;
+    border: none;
+    width: 60%;
+}
+.footer-signupDiv > div button{
+    outline: none;
+    border: none;
+    background-color: rgb(181, 136, 43);
+    color: white;
+    width: 30%;
+    padding: 0.8em 3em;
+    border-radius: 4px;
+}
+
+.footer-details{
+    width: 100%;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 50px 0;
+}
+
+.footer-details h4{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    margin-bottom: 4px;
+    color: rgb(181, 136, 43);
+    font-family: Cormorant, sans-serif;
+    margin-bottom: 1em;
+}
+
+.footer-details p{
+    font-family: Hind, sans-serif;
+    font-size: 15px;
+    width: 100%;
+    color: gray;
+}
+
+.footer-detail_container{
+    width: 70%;
+    margin: auto;
+    display: flex;
+}
+.footer-detail_container > div{
+    padding: 0px 10px;
+}
+
+.footer-about{
+    width: 35%;
+}
+.footer-about > div{
+    margin-top: 50px;
+}
+.footer-about span{
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 10px;
+    margin-right: 5px;
+}
+.footer-about svg {
+    color: gray;
+}
+
+.footer-about span:hover{
+    background-color: rgb(181, 136, 43);
+    cursor: pointer;
+}
+.footer-about span:hover svg{
+    color: white;
+}
+
+.footer-services{
+    width: 20%;
+}
+.footer-links{
+    width: 20%;
+}
+
+.footer-services p:hover,
+.footer-links p:hover{
+    color: rgb(181, 136, 43);
+    cursor: pointer;
+}
+
+
+.footer-gallery{
+    width: 25%;
+}
+
+.footer-gallery > div{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-gallery img{
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.footer-copywrite{
+    text-align: center;
+    padding: 1em;
+}
+.footer-copywrite p{
+    color: gray;
+}
+.footer-copywrite a{
+    text-decoration: none;
+    color: gray;
+}
+.footer-copywrite a:hover{
+    color: rgb(181, 136, 43);
+}
+
+
+/* responsive */
+@media only screen and (max-width: 600px) {
+    .footer-contactDiv{
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer-contactDiv > div{
+        width: 100%;
+        margin: 0.5em;
+    }
+    .footer-signupDiv > div {
+        width: 96%;
+    }
+    .footer-detail_container{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .footer-detail_container > div{
+        width: 98%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .footer-contactDiv{
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer-contactDiv > div{
+        width: 100%;
+        margin: 0.5em;
+    }
+    .footer-signupDiv > div {
+        width: 96%;
+    }
+    .footer-detail_container{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .footer-detail_container > div{
+        width: 49%;
+        margin: auto;
+        margin-bottom: 30px;
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .footer-contactDiv{
+        flex-direction: row;
+    }
+    .footer-contactDiv > div{
+        width: 33%;
+        margin: 1em;
+    }
+    .footer-signupDiv > div{
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .footer-detail_container{
+        flex-wrap: nowrap;
+    }
+    .footer-signupDiv > div{
+        width: 40%;
+    }
+    .footer-about{
+        width: 35%;
+    }
+    .footer-services{
+        width: 20%;
+    }
+    .footer-links{
+        width: 20%;
+    }
+    .footer-gallery{
+        width: 25%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .footer-contactDiv{
+        width: 70%;
+    }
+    .footer-detail_container{
+        width: 70%;
+    }
+}
