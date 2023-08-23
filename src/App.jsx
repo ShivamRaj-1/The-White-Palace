@@ -5,6 +5,7 @@ import Videos from "./components/videos/Videos"
 import Services from "./components/services/Services"
 import Welcome from "./components/welcome/Welcome"
 import Footer from "./components/Footer/Footer"
+import Feature from "./components/feature/Feature"
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
     <>
       <Topbar/>
       <Navbar/>
+      <Feature/>
       <Welcome/>
       <Services/>
       <Portfolio/>
