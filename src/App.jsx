@@ -3,6 +3,7 @@ import Topbar from "./components/topbar/Topbar"
 import Portfolio from "./components/portfolio/Portfolio"
 import Videos from "./components/videos/Videos"
 import Services from "./components/services/Services"
+import Welcome from "./components/welcome/Welcome"
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
     <>
       <Topbar/>
       <Navbar/>
+      <Welcome/>
       <Services/>
       <Portfolio/>
       <Videos/>
