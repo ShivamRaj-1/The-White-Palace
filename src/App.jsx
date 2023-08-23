@@ -1,6 +1,7 @@
 import Navbar from "./components/navbar/Navbar"
 import Topbar from "./components/topbar/Topbar"
 import Portfolio from "./components/portfolio/Portfolio"
+import Videos from "./components/videos/Videos"
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
       <Topbar/>
       <Navbar/>
       <Portfolio/>
+      <Videos/>
     </>
   )
 }
