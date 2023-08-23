@@ -10,7 +10,7 @@
 }
 
 .topbar-container{
-    width: 90%;
+    width: 1140px;
     margin: auto;
 
     display: flex;
@@ -20,13 +20,15 @@
 .topbar-container > div{
     /* width: 20%; */
     border: 1px solid white;
-    padding: 16px 14px;
+    padding: 16px 16px;
     display: flex;
     align-items: center;
+    font-size: 13px;
+    font-family: 'Inter', sans-serif;
 }
 
 .topbar-container > div:nth-child(3){
-    width: 20%;
+    width: 200px;
 }
 
 .topbar-container > div > span{
@@ -64,12 +66,13 @@
     font-weight: 600;
     padding: 16px 24px;
     background-color: rgb(205, 154, 24);
+    cursor: pointer;
 }
 
 
 
 @media screen and (max-width: 1200px){
     .topbar-main_container{
-        display: hidden;
+        display: none;
     }
 }
