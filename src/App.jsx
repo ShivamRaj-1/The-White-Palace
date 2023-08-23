@@ -6,6 +6,7 @@ import Services from "./components/services/Services"
 import Welcome from "./components/welcome/Welcome"
 import Footer from "./components/Footer/Footer"
 import Feature from "./components/feature/Feature"
+import Intro from "./components/intro/Intro"
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <Topbar/>
       <Navbar/>
       <Feature/>
+      <Intro/>
       <Welcome/>
       <Services/>
       <Portfolio/>
