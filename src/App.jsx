@@ -7,6 +7,7 @@ import Welcome from "./components/welcome/Welcome"
 import Footer from "./components/Footer/Footer"
 import Feature from "./components/feature/Feature"
 import Intro from "./components/intro/Intro"
+import Carousels from "./components/carousels/Carousels"
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
     <>
       <Topbar/>
       <Navbar/>
+      <Carousels/>
       <Feature/>
       <Intro/>
       <Welcome/>
