@@ -1,0 +1,135 @@
+.navbar-main_conatiner{
+    width: 100%;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    font-family: Hind, sans-serif;
+    font-weight: 600;
+}
+
+.navbar-container{
+    width: 60%;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-container img{
+    width: 190px;
+}
+
+.navbar-container p{
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.navbar-container a{
+  color: white;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 6px;
+  }
+  
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color:  goldenrod;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  .hover-underline-animation button{
+    background-color: black;
+    outline: none;
+    border: none;
+  }
+  .hover-underline-animation button:hover,
+  .hover-underline-animation button:active{
+    background-color: black;
+  }
+
+  .hover-underline-animation a{
+    color: white;
+    margin-bottom: 8px;
+  }
+  .hover-underline-animation a:hover{
+    background-color: black !important;
+    color: #b5882b;
+  }
+
+  .navbar-Rcontainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 25px;
+    display: none;
+  }
+
+  .navbar-Rcontainer svg{
+    font-size: 24px;
+    color: white;
+  }
+
+  .dropdown-menu{
+    width: 95vw;
+    margin-top: 10px;
+    padding: 2em;
+
+    border-top: 2px solid goldenrod;
+    background-color: black;
+  }
+  .dropdown-menu span{
+    color: white;
+  }
+  .dropdown-divider{
+    border: 1px solid rgba(255, 252, 252, 0.847);
+  }
+
+  .dropdown-item{
+    background-color: black !important;
+  }
+  .accordion{
+    background-color: black;
+    border: none;
+  }
+  
+.accordion > div{
+  padding-left: 0 !important;
+}
+
+.accordion a {
+  color: white !important;
+  padding-bottom: 10px;
+}
+
+  .accordion button,
+  .accordion h2,
+  .accordion div{
+    background-color: black !important;
+    color: white !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+  }
+
+  @media (max-width: 1200px){
+    .navbar-Rcontainer{
+      display: flex;
+    }
+    .navbar-container{
+      display: none;
+    }
+  }

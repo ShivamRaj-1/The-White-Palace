@@ -1,0 +1,82 @@
+.carousel-innerDiv > div{
+    margin-top: 50px;
+}
+.carousel-innerDiv button{
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+    border-radius: 4px;
+    font-family: Cormorant, sans-serif;
+    font-weight: 600;
+}
+
+.carousel-innerDiv button:nth-child(1){
+    border: 1px solid black;
+}
+.carousel-innerDiv button:nth-child(1):hover{
+    border: 1px solid #b5882b;
+    color: #b5882b;
+}
+
+.carousel-innerDiv button:nth-child(2){
+    border: 1px solid #b5882b;
+    background-color: #b5882b;
+    color: white;
+}
+.carousel-innerDiv button:nth-child(2):hover{
+    border: 1px solid black;
+    background-color: black;
+}
+
+.slide-up-fade-in{
+    animation: slide-up-fade-in ease 2s;
+    animation-iteration-count: 1;
+    transform-origin: -50% 0%;
+    animation-fill-mode:forwards;
+}
+
+@keyframes slide-up-fade-in{
+    0% {
+        opacity:0;
+        transform:  translate(-50%,0)  ;
+    }
+    100% {
+        opacity:1;
+        transform:  translate(-50%,-50%)  ;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .carousel-innerDiv{
+        width: 60% !important;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .carousel-innerDiv > div{
+        width: 70% !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .carousel-innerDiv{
+        width: 80% !important ;
+    }
+    .carousel-innerDiv > div{
+        width: 60% !important;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .carousel-innerDiv{
+        height: 80% !important;
+        width: 80% !important ;
+    }
+    .carousel-innerDiv > div{
+        width: 80% !important;
+    }
+    .carousel-innerDiv button{
+        padding: 10px 10px;
+    }
+}
