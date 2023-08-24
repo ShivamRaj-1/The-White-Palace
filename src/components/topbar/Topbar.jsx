@@ -20,7 +20,7 @@ export default function Topbar() {
                 <FaPhoneAlt/> <span>+91-9540666661</span>
             </div>
             <div>
-                <FaRegEnvelope/> <span>ravi.basista07@gmail.com</span>
+                <FaRegEnvelope/> &nbsp; <Link to='mailto:ravi.basista07@gmail.com'><span>ravi.basista07@gmail.com</span></Link>
             </div>
             <div></div>
             <div>

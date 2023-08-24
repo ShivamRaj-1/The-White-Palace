@@ -24,6 +24,10 @@
     cursor: pointer;
 }
 
+.navbar-container a{
+  color: white;
+}
+
 .hover-underline-animation {
     display: inline-block;
     position: relative;

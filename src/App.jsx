@@ -1,14 +1,15 @@
+import { Route, Routes } from "react-router-dom";
+
 import Navbar from "./components/navbar/Navbar"
 import Topbar from "./components/topbar/Topbar"
-import Portfolio from "./components/portfolio/Portfolio"
-import Videos from "./components/videos/Videos"
-import Services from "./components/services/Services"
-import Welcome from "./components/welcome/Welcome"
 import Footer from "./components/Footer/Footer"
-import Feature from "./components/feature/Feature"
-import Intro from "./components/intro/Intro"
-import Carousels from "./components/carousels/Carousels"
-import Achieved from "./components/achieved/Achieved"
+
+import Home from "./pages/home/Home";
+import PortfolioPage from "./pages/portfolio/PortfolioPage";
+import VideosPage from "./pages/videos/VideosPage";
+import AboutUs from "./pages/aboutUs/AboutUs";
+import ContactUs from "./pages/contactUs/ContactUs";
+
 
 function App() {
 
@@ -16,14 +17,16 @@ function App() {
     <>
       <Topbar/>
       <Navbar/>
-      <Carousels/>
-      <Feature/>
-      <Intro/>
-      <Welcome/>
-      <Services/>
-      <Achieved/>
-      <Portfolio/>
-      <Videos/>
+
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/portfolio" element={<PortfolioPage/>} />
+        <Route path="/videos" element={<VideosPage/>} />
+        <Route path="/about-us" element={<AboutUs/>} />
+        <Route path="/contact-us" element={<ContactUs/>} />
+        <Route path="/*" element={<h1>404: Page Not found</h1>} />
+      </Routes>
+
       <Footer/>
     </>
   )

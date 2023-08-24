@@ -6,6 +6,7 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { HiChevronDown } from "react-icons/hi2";
 import { HiXMark } from "react-icons/hi2";
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
     const [showMenu, setShowMenu] = useState(false);
@@ -15,10 +16,10 @@ export default function Navbar() {
             <div className='navbar-main_conatiner'>
                 <div className='navbar-container'>
                     <div>
-                        <p className='hover-underline-animation'>HOME</p>
+                        <Link to='/'><p className='hover-underline-animation'>HOME</p></Link>
                     </div>
                     <div>
-                        <p className='hover-underline-animation'>ABOUT US</p>
+                        <Link to='/about-us'><p className='hover-underline-animation'>ABOUT US</p></Link>
                     </div>
                     <div>
                         <p className='hover-underline-animation'>
@@ -42,13 +43,13 @@ export default function Navbar() {
                         <img src="https://weblifeinfo.co/demo/master/html/the-white-palace/images/logo.png" alt="Site Logo" />
                     </div>
                     <div>
-                        <p className='hover-underline-animation'>PORTFOLIO</p>
+                        <Link to='/portfolio'><p className='hover-underline-animation'>PORTFOLIO</p></Link>
                     </div>
                     <div>
-                        <p className='hover-underline-animation'>VIDEOS</p>
+                        <Link to='/videos'><p className='hover-underline-animation'>VIDEOS</p></Link>
                     </div>
                     <div>
-                        <p className='hover-underline-animation'>CONTACT US</p>
+                        <Link to='/contact-us'><p className='hover-underline-animation'>CONTACT US</p></Link>
                     </div>
                 </div>
 
@@ -57,11 +58,11 @@ export default function Navbar() {
                         <img src="https://weblifeinfo.co/demo/master/html/the-white-palace/images/logo.png" alt="Site Logo" width={'190px'} />
                     </div>
                     <div class="dropdown">
-                        <a href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false" onClick={()=>setShowMenu(!showMenu)}>
+                        <a href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false" onClick={() => setShowMenu(!showMenu)}>
                             {
-                                showMenu ? <HiXMark/> : <GiHamburgerMenu />
+                                showMenu ? <HiXMark /> : <GiHamburgerMenu />
                             }
-                            
+
                         </a>
 
                         <ul class="dropdown-menu">
@@ -73,7 +74,7 @@ export default function Navbar() {
                                 <div class="dropdown-item">
                                     <Accordion>
                                         <Accordion.Item eventKey="0">
-                                            <Accordion.Header>Services &nbsp; <HiChevronDown/></Accordion.Header>
+                                            <Accordion.Header>Services &nbsp; <HiChevronDown /></Accordion.Header>
                                             <Accordion.Body>
                                                 <Dropdown.Item href="#">Event Management</Dropdown.Item>
                                                 <Dropdown.Item href="#">Wedding Planner</Dropdown.Item>

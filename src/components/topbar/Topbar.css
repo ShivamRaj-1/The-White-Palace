@@ -35,6 +35,11 @@
     margin-left: 8px;
 }
 
+.topbar-container a{
+    color: white;
+    text-decoration: none;
+}
+
 .topbar-socials{
     padding: 0 !important;
 }
