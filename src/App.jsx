@@ -8,6 +8,7 @@ import Footer from "./components/Footer/Footer"
 import Feature from "./components/feature/Feature"
 import Intro from "./components/intro/Intro"
 import Carousels from "./components/carousels/Carousels"
+import Achieved from "./components/achieved/Achieved"
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
       <Intro/>
       <Welcome/>
       <Services/>
+      <Achieved/>
       <Portfolio/>
       <Videos/>
       <Footer/>

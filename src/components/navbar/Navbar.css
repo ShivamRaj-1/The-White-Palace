@@ -48,6 +48,25 @@
     transform-origin: bottom left;
   }
 
+  .hover-underline-animation button{
+    background-color: black;
+    outline: none;
+    border: none;
+  }
+  .hover-underline-animation button:hover,
+  .hover-underline-animation button:active{
+    background-color: black;
+  }
+
+  .hover-underline-animation a{
+    color: white;
+    margin-bottom: 8px;
+  }
+  .hover-underline-animation a:hover{
+    background-color: black !important;
+    color: #b5882b;
+  }
+
   .navbar-Rcontainer{
     display: flex;
     justify-content: space-between;
@@ -74,6 +93,32 @@
   }
   .dropdown-divider{
     border: 1px solid rgba(255, 252, 252, 0.847);
+  }
+
+  .dropdown-item{
+    background-color: black !important;
+  }
+  .accordion{
+    background-color: black;
+    border: none;
+  }
+  
+.accordion > div{
+  padding-left: 0 !important;
+}
+
+.accordion a {
+  color: white !important;
+  padding-bottom: 10px;
+}
+
+  .accordion button,
+  .accordion h2,
+  .accordion div{
+    background-color: black !important;
+    color: white !important;
+    border: 0 !important;
+    border-radius: 0 !important;
   }
 
   @media (max-width: 1200px){
